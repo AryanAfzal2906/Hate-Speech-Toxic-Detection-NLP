@@ -16,3 +16,22 @@ This project implements a machine learning-based system to detect hate speech an
 - Matplotlib & Seaborn
 
 ## 📂 Project Structure
+
+## 📊 Results
+- Accuracy: ~91%
+- Precision: ~89%
+- Recall: ~87%
+
+## 📁 Dataset
+Toxic Comment Classification Dataset (Kaggle)  
+https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
+
+## ▶️ How to Run
+1. Open the notebook in Google Colab
+2. Upload `train.csv`
+3. Run all cells sequentially
+
+## 🎓 Author
+**Aryan Afzal**  
+Department of Computer Science  
+UET Taxila
