@@ -2,7 +2,7 @@
 
 An end-to-end Machine Learning web application that classifies text comments as **Toxic** or **Non-Toxic** using Natural Language Processing.
 
-![App Screenshot](<img width="766" height="437" alt="Output" src="https://github.com/user-attachments/assets/dabf2cd2-9a40-4377-9232-0650b9b0997a" />
+ App Screenshot(<img width="766" height="437" alt="Output" src="https://github.com/user-attachments/assets/dabf2cd2-9a40-4377-9232-0650b9b0997a" />
 .png) 
 
 ## 🚀 Overview
