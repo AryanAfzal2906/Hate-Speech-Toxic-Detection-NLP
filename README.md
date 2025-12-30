@@ -18,7 +18,7 @@ This project provides a real-time interface to detect harmful online content. It
 
 ## 📂 Project Structure
 * `app.py`: Main Streamlit application code.
-* `model/`: Contains the serialized `.pkl` files (Logistic Model & TF-IDF Vectorizer).
+* `Logistic Model & TF-IDF Vectorizer).
 * `Hate_Speech_Detection.ipynb`: Google Colab notebook used for data cleaning and model training.
 * `requirements.txt`: List of necessary Python libraries.
 
