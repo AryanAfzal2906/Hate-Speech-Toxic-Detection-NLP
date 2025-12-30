@@ -5,8 +5,8 @@ import numpy as np
 # Load model & vectorizer using the paths you described
 # 'model/' refers to the subfolder inside ARYAN
 try:
-    model = joblib.load("model/logistic_model.pkl")
-    vectorizer = joblib.load("model/tfidf_vectorizer.pkl")
+    model = joblib.load("logistic_model.pkl")
+    vectorizer = joblib.load("tfidf_vectorizer.pkl")
 except Exception as e:
     st.error(f"Error loading files: {e}")
 
