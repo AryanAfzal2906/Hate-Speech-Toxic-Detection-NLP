@@ -1,10 +1,14 @@
 import streamlit as st
-import pickle
+import joblib
 import numpy as np
 
-# Load model & vectorizer
-model = pickle.load(open("model/logistic_model.pkl", "rb"))
-vectorizer = pickle.load(open("model/vectorizer.pkl", "rb"))
+# Load model & vectorizer using the paths you described
+# 'model/' refers to the subfolder inside ARYAN
+try:
+    model = joblib.load("model/logistic_model.pkl")
+    vectorizer = joblib.load("model/tfidf_vectorizer.pkl")
+except Exception as e:
+    st.error(f"Error loading files: {e}")
 
 st.set_page_config(page_title="Toxic Comment Detector", page_icon="🚫")
 
@@ -23,10 +27,12 @@ if st.button("Analyze"):
 
         # Prediction
         prediction = model.predict(text_vector)[0]
-        probability = model.predict_proba(text_vector).max()
+        
+        # Get probability for the predicted class
+        probabilities = model.predict_proba(text_vector)[0]
+        confidence = np.max(probabilities)
 
         if prediction == 1:
-            st.error(f"🚫 Toxic Comment\nConfidence: {probability:.2%}")
+            st.error(f"🚫 Toxic Comment\n\n")
         else:
-            st.success(f"✅ Non-Toxic Comment\nConfidence: {probability:.2%}")
-
+            st.success(f"✅ Non-Toxic Comment\n\n")
