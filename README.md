@@ -1,32 +1,36 @@
-# Detecting Hate Speech and Toxic Language using NLP
+# Hate Speech & Toxic Comment Detection using NLP
 
-This project implements a machine learning-based system to detect hate speech and toxic language in online comments using Natural Language Processing (NLP).
+This project builds a machine learning-based system to detect whether online comments are toxic or not using Natural Language Processing (NLP) techniques.
 
-## 📌 Project Overview
-- Text classification using TF-IDF
-- Logistic Regression model
-- Binary classification: Toxic vs Non-Toxic
-- Dataset: Kaggle Toxic Comment Classification
+## 🧠 Problem Statement
+Online platforms often face challenges with toxic and abusive comments. This model classifies comments as toxic or non-toxic to support automated moderation.
 
-## 🧠 Technologies Used
+## 📊 Dataset
+We use the Kaggle **Toxic Comment Classification Challenge** dataset which contains labeled comments from Wikipedia talk page edits. Each comment is labeled as toxic or non-toxic. 
+
+## 🛠️ Tech Stack
 - Python
-- Google Colab
 - Scikit-learn
 - NLTK
-- Matplotlib & Seaborn
+- TF-IDF Vectorizer
+- Logistic Regression
 
-## 📂 Project Structure
+## 🚀 Methodology
+1. Text preprocessing (tokenization, stop word removal).  
+2. Feature extraction using TF-IDF.  
+3. Classification using Logistic Regression.
 
-## 📊 Results
-- Accuracy: ~91%
-- Precision: ~89%
-- Recall: ~87%
+## 📈 Evaluation Metrics
 
-## 📁 Dataset
-Toxic Comment Classification Dataset (Kaggle)  
-https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
+| Metric      | Value |
+|-------     -|-------|
+| Accuracy    | 91% |
+| Precision   | 89% |
+| Recall      | 87% |
 
-## 🎓 Author
-**Aryan Afzal**  
-Department of Computer Science  
-UET Taxila
+## 📌 How to Run
+```bash
+git clone https://github.com/AryanAfzal2906/Hate-Speech-Toxic-Detection-NLP
+cd Hate-Speech-Toxic-Detection-NLP
+pip install -r requirements.txt
+jupyter notebook
