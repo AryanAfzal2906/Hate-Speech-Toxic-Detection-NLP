@@ -1,36 +1,26 @@
-# Hate Speech & Toxic Comment Detection using NLP
+# 🚨 Toxic Comment & Hate Speech Detector
 
-This project builds a machine learning-based system to detect whether online comments are toxic or not using Natural Language Processing (NLP) techniques.
+An end-to-end Machine Learning web application that classifies text comments as **Toxic** or **Non-Toxic** using Natural Language Processing.
 
-## 🧠 Problem Statement
-Online platforms often face challenges with toxic and abusive comments. This model classifies comments as toxic or non-toxic to support automated moderation.
+![App Screenshot](your_screenshot_name.png) 
 
-## 📊 Dataset
-We use the Kaggle **Toxic Comment Classification Challenge** dataset which contains labeled comments from Wikipedia talk page edits. Each comment is labeled as toxic or non-toxic. 
+## 🚀 Overview
+This project provides a real-time interface to detect harmful online content. It leverages a **Logistic Regression** model and **TF-IDF Vectorization** to analyze the sentiment and toxicity of user-provided text.
 
-## 🛠️ Tech Stack
-- Python
-- Scikit-learn
-- NLTK
-- TF-IDF Vectorizer
-- Logistic Regression
+## 🛠️ Features
+* **Real-time Prediction:** Get instant results upon typing.
+* **Confidence Scoring:** Shows how certain the model is about its classification.
+* **Clean UI:** Simple and intuitive interface built with Streamlit.
+* **Notebook Included:** Full training process documented in `Hate_Speech_Detection.ipynb`.
 
-## 🚀 Methodology
-1. Text preprocessing (tokenization, stop word removal).  
-2. Feature extraction using TF-IDF.  
-3. Classification using Logistic Regression.
+## 📂 Project Structure
+* `app.py`: Main Streamlit application code.
+* `model/`: Contains the serialized `.pkl` files (Logistic Model & TF-IDF Vectorizer).
+* `Hate_Speech_Detection.ipynb`: Google Colab notebook used for data cleaning and model training.
+* `requirements.txt`: List of necessary Python libraries.
 
-## 📈 Evaluation Metrics
-
-| Metric      | Value |
-|-------     -|-------|
-| Accuracy    | 91% |
-| Precision   | 89% |
-| Recall      | 87% |
-
-## 📌 How to Run
-```bash
-git clone https://github.com/AryanAfzal2906/Hate-Speech-Toxic-Detection-NLP
-cd Hate-Speech-Toxic-Detection-NLP
-pip install -r requirements.txt
-jupyter notebook
+## 💻 How to Run Locally
+1. **Clone the repo:**
+   ```bash
+   git clone [https://github.com/AryanAfzal2906/Your-Repo-Name.git](https://github.com/AryanAfzal2906/Hate-Speech-Toxic-Detection-NLP.git)
+   cd Hate-Speech-Toxic-Detection-NLP
