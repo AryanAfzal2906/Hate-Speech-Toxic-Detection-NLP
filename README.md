@@ -24,7 +24,6 @@ This project provides a real-time interface to detect harmful online content. It
 
 ## 💻 How to Run Locally
 1. **Clone the repo:**
-   ```bash
    git clone [https://github.com/AryanAfzal2906/Your-Repo-Name.git](https://github.com/AryanAfzal2906/Hate-Speech-Toxic-Detection-NLP.git)
    cd Hate-Speech-Toxic-Detection-NLP
 
