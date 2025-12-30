@@ -1,3 +1,5 @@
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)] https://hate-speech-toxic-detection-nlp-hnahzkt8j7ho2q7i9jysm5.streamlit.app/#hate-speech-and-toxic-comment-detection
+
 # 🚨 Toxic Comment & Hate Speech Detector
 
 An end-to-end Machine Learning web application that classifies text comments as **Toxic** or **Non-Toxic** using Natural Language Processing.
