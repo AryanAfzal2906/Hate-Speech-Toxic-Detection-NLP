@@ -3,7 +3,6 @@ import joblib
 import numpy as np
 
 # Load model & vectorizer using the paths you described
-# 'model/' refers to the subfolder inside ARYAN
 try:
     model = joblib.load("logistic_model.pkl")
     vectorizer = joblib.load("tfidf_vectorizer.pkl")
